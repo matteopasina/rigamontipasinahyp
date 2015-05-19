@@ -1,3 +1,26 @@
-.news{
+.news {
     text-align: center;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+.footerMenu li {
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    vertical-align: top;
 }

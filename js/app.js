@@ -1,1 +1,5 @@
-var app = angular.module('BigGymApp', []);
+angular.module('bigGymApp', [])
+.controller('headerController', function($scope){
+    
+    
+});
