@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="bigGymApp">
+<html lang="en" >
 
 
 <head>
@@ -17,10 +17,12 @@
 
 </head>
 
-<body ng-controller="headerController">
+<body ng-app="bigGymApp">
     <!-- Header-->
-    <div ng-include="" src="'header.html'"></div>
-
+    <!--<div ng-include="" src="'header.html'"></div>-->
+   <div ng-controller="Controller">
+        <div my-customer info="location"></div>
+    </div> 
     <div class="container">
         <div class="row">
             <div class="box">
@@ -53,7 +55,7 @@
 
     <!--Footer-->
     <div ng-include="" src="'footer.html'"></div>
-
+    <script src="js/controllers/NavbarController.js"></script>
 </body>
 
 </html>

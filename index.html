@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="bigGymApp">
+<html lang="en" >
 
 
 <head>
@@ -15,11 +15,13 @@
     
 
 </head>
-
-<body ng-controller="headerController">
-    <!-- Header-->
-    <div ng-include="" src="'header.html'"></div>
-
+<!--ng-controller="headerController"-->
+<body ng-app="bigGymApp">
+    <!-- Header
+    <div ng-include="" src="'header.html'"></div>-->
+     <div ng-controller="Controller">
+        <div my-customer info="customers"></div>
+    </div>  
     <!-- Carousel==================================================- -->
     <div id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
@@ -70,6 +72,7 @@
     <div ng-include="" src="'footer.html'"></div>
 
     <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/controllers/NavbarController.js"></script>
 </body>
 
 </html>
