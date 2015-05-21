@@ -21,16 +21,13 @@
     <!-- Header-->
     <div ng-controller="Controller">
         <div my-customer info="customers"></div>
-    </div> 
+    </div>
 
     <div class="instructorslist" ng-app="allinstructors" ng-controller="instructorsCtrl">
-
-        <ul>
-            <li ng-repeat="x in instructors">
-                {{ x.Nome + ', ' + x.Descrizione }}
-            </li>
-        </ul>
-
+        <div ng-repeat="x in instructors">
+            <img src="{{ x.pathImageLogo }}"/>
+            {{ x.Nome + ', ' + x.Descrizione }}
+        </div>
     </div>
 
     <!--Footer-->
