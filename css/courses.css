@@ -1,0 +1,20 @@
+#coursesbox{
+    margin:20px;
+}
+
+#coursesbox p{
+    font-size: 20px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    margin-bottom: 20px;
+    border: #999999 solid 1px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
