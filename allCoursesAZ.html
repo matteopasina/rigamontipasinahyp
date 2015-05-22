@@ -9,47 +9,50 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <!--<link rel="stylesheet" href="sticky-footer.css">-->
+    <link rel="stylesheet" href="css/courses.css">
     <link rel="stylesheet" href="css/style.css">
-        <!-- Include the AngularJS library -->
+    <!-- Include the AngularJS library -->
     <script src="js/angular.min.js"></script>
 
+
 </head>
-<!--ng-controller="headerController"-->
 
 <body ng-app="bigGymApp">
     <div class="mainContainer">
-        <!-- Header-->
+        <!-- Navbar -->
         <div ng-controller="Controller">
             <div my-customer info="customers"></div>
         </div>
-        <h1 class="page-header">Instructors</h1>
+
+        <!-- Box courses -->
         <div class="container">
-            <div class="instructorslist" ng-app="allinstructors" ng-controller="instructorsCtrl">
-                <div ng-repeat="x in instructors">
+            <div class="instructorslist" ng-app="allcourses" ng-controller="coursesCtrl">
+                <div ng-repeat="x in courses">
 
-                    <div id="instructor" class="col-lg-4 col-sm-6 text-center">
-
-                        <img class="img-circle img-responsive img-center" src="{{ x.pathImageLogo }}" alt="">
-                        <h3>{{x.NickName}}
-                    <small>{{x.Nome}}</small>
-                </h3>
-                        <p>{{x.Descrizione}}</p>
+                    <div id="coursesbox" class="col-lg-12">
+                        <div class="box">
+                            <hr>
+                            <h2 class="intro-text text-center">{{x.Nome}}
+                                </h2>
+                            <hr>
+                            <img class="img-responsive img-border" src="{{ x.Img }}" alt="">
+                            <p>{{x.Descrizione}}</p>
+                        </div>
                     </div>
-
+                    
                 </div>
             </div>
         </div>
     </div>
+
     <!--Footer-->
     <div ng-include="" src="'footer.html'"></div>
-
 
     <script src="js/app.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/controllers/NavbarController.js"></script>
-    <script src="js/controllers/instructors.js"></script>
+    <script src="js/controllers/coursesAZ.js"></script>
 </body>
 
 </html>

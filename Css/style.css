@@ -1,13 +1,17 @@
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-image:url(../img/bbackground.jpg);
-    padding-left: 10%;
-    padding-right: 10%;
-    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-top: 50px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-image: url(../img/background1.png);
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.mainContainer {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .news {
@@ -20,24 +24,43 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-#instructor{
+hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+a {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+div {
+    border-radius: 4px;
+}
+
+#instructor {
     height: 400px;
     width: 350px;
 }
 
 .box {
     margin-bottom: 20px;
-    padding: 30px 15px;
-    background: #fff;
-    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.85);
 }
 
 .myfooter {
+    border-radius: 4px;
     position: relative;
     bottom: 0px;
     left: 0px;
@@ -46,24 +69,29 @@ h6 {
     /* Set the fixed height of the footer here */
     
     height: 60px;
-    background-color: #f5f5f5;
+    background-color: #363636;
 }
 
-.footermenu li{  
+.footermenu li {
     font-size: 20px;
-    margin: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
     display: inline-block;
     text-align: center;
-    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-
-.instructorslist{   
+.instructorslist {
     text-align: center;
     font-family: sans-serif;
     font-size: 30px;
 }
 
 .img-center {
-	margin: 0 auto;
+    margin: 0 auto;
 }
+
+#location{
+    margin: 20px;
+}
+
