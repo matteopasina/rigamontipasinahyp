@@ -12,3 +12,9 @@
     margin-bottom: 20px;
     border: #999999 solid 1px;
 }
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
