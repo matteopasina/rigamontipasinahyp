@@ -6,6 +6,8 @@
     <title>Big Gym</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <!--<link rel="stylesheet" href="sticky-footer.css">-->
     <link rel="stylesheet" href="css/style.css">
@@ -27,7 +29,7 @@
             <div class="instructorslist" ng-app="allinstructors" ng-controller="instructorsCtrl">
                 <div ng-repeat="x in instructors">
 
-                    <div class="col-lg-4 col-sm-6 text-center">
+                    <div id="instructor" class="col-lg-4 col-sm-6 text-center">
 
                         <img class="img-circle img-responsive img-center" src="{{ x.pathImageLogo }}" alt="">
                         <h3>{{x.NickName}}
