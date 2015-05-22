@@ -1,0 +1,17 @@
+<div my-customer info="customers"></div>
+
+<div class="main">
+  <div class="container">
+
+    <h2>Corsi</h2>
+    <div class="row">
+      <div class="item col-md-4" ng-repeat="corso in courses">
+        <a href="#/course/{{$index}}">
+          <img class="img-responsive" ng-src="{{ corso.Img }}">
+          <p class="author"> {{ corso.Nome }}</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
