@@ -22,12 +22,22 @@
     <div ng-controller="Controller">
         <div my-customer info="customers"></div>
     </div>
+    <h1 class="page-header">Instructors</h1>
+    <div class="container">
+            <div class="instructorslist" ng-app="allinstructors" ng-controller="instructorsCtrl">
+                <div ng-repeat="x in instructors">
 
-    <div class="instructorslist" ng-app="allinstructors" ng-controller="instructorsCtrl">
-        <div ng-repeat="x in instructors">
-            <img src="{{ x.pathImageLogo }}"/>
-            {{ x.Nome + ', ' + x.Descrizione }}
-        </div>
+                    <div class="col-lg-4 col-sm-6 text-center">
+
+                        <img class="img-circle img-responsive img-center" src="{{ x.pathImageLogo }}" alt="">
+                        <h3>{{x.NickName}}
+                    <small>{{x.Nome}}</small>
+                </h3>
+                        <p>{{x.Descrizione}}</p>
+                    </div>
+
+                </div>
+            </div>
     </div>
 
     <!--Footer-->
