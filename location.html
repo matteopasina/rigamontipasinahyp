@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+
+<head>
+    <title>Big Gym</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="sticky-footer.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Include the AngularJS library -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+
+</head>
+
+<body ng-app="bigGymApp">
+    <!-- Header-->
+    <!--<div ng-include="" src="'header.html'"></div>-->
+   <div ng-controller="Controller">
+        <div my-customer info="location"></div>
+    </div> 
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Where we are
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-4">
+                    <p>Phone:
+                        <strong>417-315-8034</strong>
+                    </p>
+                    <p>Email:
+                        <strong><a href="#">info@biggym.com</a></strong>
+                    </p>
+                    <p>Address:
+                        <strong>123, Fake street
+                            <br>Springfield, USA 65806</strong>
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div ng-include="" src="'footer.html'"></div>
+    <script src="js/controllers/NavbarController.js"></script>
+</body>
+
+</html>
