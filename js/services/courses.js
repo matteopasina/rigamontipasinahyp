@@ -7,3 +7,22 @@ app.factory('courses', ['$http', function($http) {
            return data;
          });
 }]); 
+
+app.factory('coursesByLevel', ['$http', function($http) {
+  return $http.get('http://grandepalestra.altervista.org/CoursesByLevel.php')
+         .success(function(data) {
+           return data;
+         })
+         .error(function(data) {
+           return data;
+         });
+}]); 
+app.factory('coursesByCategory', ['$http', function($http) {
+  return $http.get('http://grandepalestra.altervista.org/CourseByCourseCategory.php')
+         .success(function(data) {
+           return data;
+         })
+         .error(function(data) {
+           return data;
+         });
+}]); 

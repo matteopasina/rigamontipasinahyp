@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Big Gym</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="sticky-footer.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Include the AngularJS library -->
+    <script src="js/angular.min.js"></script>
+    
+    <!-- Include the AngularJS routing library -->
+    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+   <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script> 
+    <script src="js/appCourse.js"></script>
+
+
+
+</head>
+<!--ng-controller="headerController"-->
+
+<body ng-app="CourseApp">
+    <!-- Header-->
+    <div class="header">
+        <div ng-view></div>
+    </div>
+    <!--Footer-->
+    <div ng-include="" src="'footer.html'"></div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/CourseHomeController.js"></script>
+    <script src="js/controllers/CourseController.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/courses.js"></script>
+</body>
+
+</html> 

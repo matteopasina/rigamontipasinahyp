@@ -11,6 +11,14 @@ app.config(function ($routeProvider) {
   		controller:'CourseController',
     	templateUrl:'/views/Course.html'
   })
+  .when('/courseByLevel/',{
+  		controller:'CourseLevelController',
+    	templateUrl:'/views/CourseLevel.html'
+  })
+  .when('/coursesByCategory/',{
+  		controller:'CourseByCourseCategoryController',
+    	templateUrl:'/views/CourseLevel.html'
+  })
     .otherwise({ 
       redirectTo: '/' 
     }); 

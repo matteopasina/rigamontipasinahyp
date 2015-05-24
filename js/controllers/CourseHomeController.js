@@ -4,12 +4,12 @@ app.controller('CourseHomeController', ['$scope', 'courses', function($scope, co
   });
   $scope.customers = [
   {
-    name: 'Instructors of the month',
-    address: 'location.html'
+    name: 'Course By Level',
+    address: 'Corsi.html#/courseByLevel/'
   },
   {
-    name: 'Courses',
-    address: 'location.html'
+    name: 'Courses By Category',
+    address: 'Corsi.html#/coursesByCategory/'
   }
 ];
 }])
@@ -21,3 +21,35 @@ app.controller('CourseHomeController', ['$scope', 'courses', function($scope, co
     templateUrl: 'header.html'
   };
 });
+
+app.controller('CourseLevelController', ['$scope', 'coursesByLevel', function($scope, coursesByLevel) {
+  coursesByLevel.success(function(data) {
+    $scope.courses = data;
+  });
+  $scope.customers = [
+  {
+    name: 'Courses',
+    address: 'Corsi.html#/'
+  },
+  {
+    name: 'Courses by Category',
+    address: 'Corsi.html#/coursesByCategory/'
+  }
+];
+}])
+app.controller('CourseByCourseCategoryController', ['$scope', 'coursesByCategory', function($scope, coursesByCategory) {
+  coursesByCategory.success(function(data) {
+    $scope.courses = data;
+  });
+  $scope.customers = [
+  {
+    name: 'Courses',
+    address: 'Corsi.html#/'
+  },
+  {
+    name: 'Courses by Level',
+    address: 'Corsi.html#/courseByLevel/'
+  }
+];
+}])
+
