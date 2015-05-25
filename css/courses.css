@@ -1,8 +1,8 @@
-#coursesbox{
-    margin:20px;
+#coursesbox {
+    margin: 20px;
 }
 
-#coursesbox p{
+#coursesbox p {
     font-size: 20px;
 }
 
@@ -10,11 +10,30 @@
     float: none;
     margin: 0 auto 0;
     margin-bottom: 20px;
-    border: #999999 solid 1px;
+    transition: box-shadow 0.3s;
+    border-radius: 5px;
+}
+
+.img-border:hover {
+    box-shadow: 4px 4px 4px #363636;
 }
 
 .vcenter {
     display: inline-block;
     vertical-align: middle;
     float: none;
+}
+
+.corso {
+    margin: 20px;
+    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.courseProperties p{
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    margin: 25px;
+    color: beige;
 }

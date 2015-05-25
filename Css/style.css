@@ -1,17 +1,18 @@
 body {
     padding-top: 50px;
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-image: url(../img/background1.png);
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.mainContainer {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
-
-.mainContainer {
+    background-image: url(../img/background1.png);
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 10%;   
+    border-radius: 0px;
 }
 
 .news {
@@ -66,6 +67,7 @@ div {
     left: 0px;
     width: 100%;
     text-align: center;
+    border-radius: 0px;
     /* Set the fixed height of the footer here */
     
     height: 60px;
@@ -74,6 +76,7 @@ div {
 
 .footermenu li {
     font-size: 20px;
+    margin-top: 15px;
     margin-left: 25px;
     margin-right: 25px;
     display: inline-block;
@@ -88,10 +91,10 @@ div {
 }
 
 .img-center {
+    display: block;
     margin: 0 auto;
 }
 
-#location{
+#location {
     margin: 20px;
 }
-
