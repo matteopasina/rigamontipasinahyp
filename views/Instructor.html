@@ -1,0 +1,17 @@
+<div my-customer info="customers"></div>
+<div>
+    <div class="container">
+        <img ng-src="{{ instructor.pathImageLogo   }}" class="vcenter">
+        <h2>{{instructor.Nome}} </h2>
+    </div>
+    <div class="col-lg-4 vcenter">
+        <p>{{ instructor.NickName }}</p>
+        <p>{{ instructor.Descrizione}}</p>
+    </div>
+    <div ng-repeat="course in courses">
+    <p>{{course.Nome}}</p>
+    <a href="#/course/{{course.IDCourse}}">
+        <img ng-src="{{ course.Img }}" class="vcenter">
+    </a>
+</div>
+</div>

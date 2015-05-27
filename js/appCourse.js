@@ -8,7 +8,7 @@ app.config(function ($routeProvider) {
       templateUrl: '/views/CourseHome.html' 
     }) 
     .when('/course/:id',{
-  		controller:'CourseController',
+  		controller:'CoursesJoinInstructor',
     	templateUrl:'/views/Course.html'
   })
   .when('/courseByLevel/',{
@@ -18,6 +18,10 @@ app.config(function ($routeProvider) {
   .when('/coursesByCategory/',{
   		controller:'CourseByCourseCategoryController',
     	templateUrl:'/views/CourseLevel.html'
+  })
+  .when('/instructor/:id',{
+  		controller:'InstructorController',
+    	templateUrl:'/views/Instructor.html'
   })
     .otherwise({ 
       redirectTo: '/' 

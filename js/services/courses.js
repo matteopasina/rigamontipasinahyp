@@ -26,3 +26,13 @@ app.factory('coursesByCategory', ['$http', function($http) {
            return data;
          });
 }]); 
+
+app.factory('coursesJoinInstructor', ['$http', function($http) {
+  return $http.get('http://grandepalestra.altervista.org/CourseJoinInstructor.php')
+         .success(function(data) {
+           return data;
+         })
+         .error(function(data) {
+           return data;
+         });
+}]); 
