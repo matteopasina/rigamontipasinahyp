@@ -1,10 +1,12 @@
-<div my-customer info="customers"></div>
+<div ng-controller="Controller">
+    <div my-customer info="customers"></div>
+</div>
 <div>
     <div class="container">
         <img ng-src="{{ instructor.pathImageLogo   }}" class="img-responsive img-circle">
         <h2 class="page-header">{{instructor.Name}}  <small>{{ instructor.NickName }}</small> </h2>
     </div>
-        <p>{{ instructor.Descrizione}}</p>
+    <p>{{ instructor.Descrizione}}</p>
     <div class="row">
         <div class="col-lg-12">
             <h2 class="page-header">The courses</h2>
