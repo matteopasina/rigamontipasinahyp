@@ -1,17 +1,21 @@
 <div my-customer info="customers"></div>
 <div>
     <div class="container">
-        <img ng-src="{{ instructor.pathImageLogo   }}" class="vcenter">
-        <h2>{{instructor.Nome}} </h2>
+        <img ng-src="{{ instructor.pathImageLogo   }}" class="img-responsive img-circle">
+        <h2 class="page-header">{{instructor.Name}}  <small>{{ instructor.NickName }}</small> </h2>
     </div>
-    <div class="col-lg-4 vcenter">
-        <p>{{ instructor.NickName }}</p>
         <p>{{ instructor.Descrizione}}</p>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">The courses</h2>
+        </div>
+        <div ng-repeat="course in courses">
+            <div class="containInstr col-lg-2 col-sm-4 text-center">
+                <p>{{course.Nome}}</p>
+                <a href="#/course/{{course.IDCourse}}">
+                    <img ng-src="{{ course.Img }}" class="img-responsive img-center">
+                </a>
+            </div>
+        </div>
     </div>
-    <div ng-repeat="course in courses">
-    <p>{{course.Nome}}</p>
-    <a href="#/course/{{course.IDCourse}}">
-        <img ng-src="{{ course.Img }}" class="vcenter">
-    </a>
-</div>
 </div>

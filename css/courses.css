@@ -18,6 +18,10 @@
     box-shadow: 4px 4px 4px #363636;
 }
 
+.coursePresentation{
+    padding: 2%;
+}
+
 .vcenter {
     display: inline-block;
     vertical-align: middle;
@@ -36,4 +40,13 @@
     font-size: 30px;
     margin: 25px;
     color: beige;
+}
+
+.containInstr{
+    margin-bottom: 1%;
+}
+
+.miniInstr:hover{
+    transition: box-shadow 0.3s;
+    box-shadow: 4px 4px 4px #363636;
 }
