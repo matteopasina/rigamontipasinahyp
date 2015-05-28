@@ -93,7 +93,7 @@ div {
     font-size:20px;
 }
 
-.container-fluid{
+.myfooter .container-fluid{
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -108,7 +108,11 @@ div {
     display: block;
     margin: 0 auto;
 }
-
-#location {
-    margin: 20px;
+#map{
+    height: 500px;
+}
+.infoWindowContent {
+    font-size:  14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
 }
