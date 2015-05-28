@@ -1,6 +1,7 @@
 body {
     padding-top: 50px;
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -11,13 +12,29 @@ body {
     -o-background-size: cover;
     background-image: url(../img/background1.png);
     padding-left: 10%;
-    padding-right: 10%;   
+    padding-right: 10%;
     border-radius: 0px;
-    padding-top: 1%;
+    padding-top: 3%;
 }
 
 .news {
     text-align: center;
+}
+
+.nav,
+.pagination,
+.carousel,
+.panel-title a {
+    cursor: pointer;
+}
+
+.mybtn {
+    text-decoration: none;
+    margin-top: 9%;
+}
+
+.mybtn:hover {
+    text-decoration: none;
 }
 
 h1,

@@ -1,5 +1,5 @@
 app.directive('myFooter', function() {
-  return{
-      templateUrl: 'footer.html'
+  return {
+      templateUrl: 'js/directives/footer.html'
   };
 });
