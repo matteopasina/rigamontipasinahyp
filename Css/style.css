@@ -82,24 +82,20 @@ div {
     border-radius: 4px;
     position: relative;
     bottom: 0px;
-    left: 0px;
     width: 100%;
     text-align: center;
     border-radius: 0px;
     /* Set the fixed height of the footer here */
     
-    height: 60px;
+    min-height: 60px;
     background-color: #363636;
+    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:20px;
 }
 
-.footermenu li {
-    font-size: 20px;
-    margin-top: 15px;
-    margin-left: 25px;
-    margin-right: 25px;
-    display: inline-block;
-    text-align: center;
-    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.container-fluid{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .instructorslist {
