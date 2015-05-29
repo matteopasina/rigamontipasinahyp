@@ -11,8 +11,6 @@
         </div>
             <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'" ng-click="navCollapsed=true">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#/index.html">Home</a>
-                    </li>
                     <li><a href="#/CourseHome">Courses</a>
                     </li>
                     <li><a href="#">Course categories</a>
@@ -31,7 +29,7 @@
                     <li ng-repeat="inf in info">
 
                         <div ng-show="{{inf.home}}" class="btn-group" dropdown is-open="status.isopen">
-                            <button type="button" class="btn btn-link mybtn dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+                            <button type="button" class="btn mybtn btn-warning dropdown-toggle" dropdown-toggle ng-disabled="disabled">
                                 Courses <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu" role="menu">

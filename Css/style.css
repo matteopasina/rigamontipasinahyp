@@ -1,12 +1,11 @@
 body {
-    padding-top: 50px;
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    
+    padding-top: 80px;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @font-face {
-    font-family: courseName;
+    font-family: headerPages;
     src: url(../fonts/new_facebok.ttf);
 }
 
@@ -24,6 +23,11 @@ body {
 .mybtn {
     text-decoration: none;
     margin-top: 9%;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
 }
 
 .mybtn:hover {
@@ -133,11 +137,13 @@ header .header-content-instructor {
 }
 
 header .header-content-instructor .header-content-inner h1 {
-    color:black;
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 50pt;
+    font-family: headerPages;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 header .header-content-instructor .header-content-inner hr {
@@ -156,7 +162,6 @@ header .header-content-course {
     width: 100%;
     padding: 15px 15px 0px 15px;
     text-align: center;
-    background-image: url(http://grandepalestra.altervista.org/img/aerobics.jpg);
     min-height: 372px;
 }
 
@@ -165,7 +170,7 @@ header .header-content-course .header-content-inner h1 {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 100;
-    font-family: courseName;
+    font-family: headerPages;
     font-size: 100pt;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -187,3 +192,5 @@ header .header-content-course .header-content-inner small{
 header .header-content-course .header-content-inner hr {
     margin: 30px auto;
 }
+
+
