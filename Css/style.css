@@ -5,16 +5,9 @@ body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.mainContainer {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    background-image: url(../img/background1.png);
-    padding-left: 10%;
-    padding-right: 10%;
-    border-radius: 0px;
-    padding-top: 3%;
+@font-face {
+    font-family: courseName;
+    src: url(../fonts/new_facebok.ttf);
 }
 
 .news {
@@ -48,7 +41,7 @@ h6 {
     letter-spacing: 1px;
 }
 
-hr {
+.box hr {
     max-width: 400px;
     border-color: #999999;
 }
@@ -116,4 +109,81 @@ div {
     font-size:  14px !important;
     border-top: 1px solid #ccc;
     padding-top: 10px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .header-content-instructor {
+    position: relative;
+    width: 100%;
+    padding: 15px 15px 0px 15px;
+    text-align: center;
+    background-image: url(../img/headerInstructor.jpg);
+}
+
+header .header-content-instructor .header-content-inner h1 {
+    color:black;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header .header-content-instructor .header-content-inner hr {
+    margin: 30px auto;
+}
+
+header .header-content-instructor .header-content-inner img {
+    margin-left: 10%;
+    -webkit-box-shadow: 0px -7px 10px #e6e6e6;
+    -moz-box-shadow: 0px -7px 10px #e6e6e6;
+    box-shadow: 0px -7px 10px #e6e6e6;
+}
+
+header .header-content-course {
+    position: relative;
+    width: 100%;
+    padding: 15px 15px 0px 15px;
+    text-align: center;
+    background-image: url(http://grandepalestra.altervista.org/img/aerobics.jpg);
+    min-height: 372px;
+}
+
+header .header-content-course .header-content-inner h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: courseName;
+    font-size: 100pt;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+header .header-content-course .header-content-inner h2{
+    color:black;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+header .header-content-course .header-content-inner small{
+    font-weight: 800;
+    color:#25F;
+}
+
+
+
+header .header-content-course .header-content-inner hr {
+    margin: 30px auto;
 }

@@ -1,30 +1,35 @@
 <div ng-controller="NavBarController">
     <div my-customer info="customers"></div>
 </div>
-<div class="row">
-    <div class="coursePresentation">
-        <img ng-src="{{ detail.Img  }}" class="img-center img-responsive col-lg-6">
-        <div class="text-center col-lg-4 vcenter">
-            <p><strong>Age:</strong>{{ detail.AgeRange }}</p>
-            <p><strong>Popularity:</strong>{{ detail.Popularity }}</p>
-            <p><strong>Level:</strong>{{ detail.Livello }}</p>
+<header>
+    <div class="header-content-course">
+        <div class="header-content-inner">
+            <h1>Aerobics</h1>
+            <hr>
+            <div class="text-left col-lg-4">
+                <h2>Age:<small>{{ detail.AgeRange }}</small></h2>
+                <h2>Popularity:<small>{{ detail.Popularity }}</small></h2>
+                <h2>Level:<small>{{ detail.Livello }}</small></h2>
+            </div>
         </div>
     </div>
-</div>
-<h2 class="page-header">{{detail.Nome}} </h2>
-<p>{{detail.Descrizione}}</p>
-<div class="row">
-    <div class="col-lg-12">
-        <h2 class="page-header">The instructors</h2>
-    </div>
-    <div ng-repeat="instructor in instructors">
+    <h2 class="page-header">{{detail.Nome}} </h2>
+</header>
+<div class="container">
+    <p>{{detail.Descrizione}}</p>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">The instructors</h2>
+        </div>
+        <div ng-repeat="instructor in instructors">
 
-        <div class="containInstr col-lg-2 col-sm-4 text-center">
-            <p><strong>{{instructor.NickName}}</strong>
-            </p>
-            <a href="#/instructor/{{instructor.IDInstructor}}">
-                <img ng-src="{{ instructor.pathImageLogo }}" class="miniInstr img-center img-responsive img-circle">
-            </a>
+            <div class="containInstr col-lg-2 col-sm-4 text-center">
+                <p><strong>{{instructor.NickName}}</strong>
+                </p>
+                <a href="#/instructor/{{instructor.IDInstructor}}">
+                    <img ng-src="{{ instructor.pathImageLogo }}" class="miniInstr img-center img-responsive img-circle">
+                </a>
+            </div>
         </div>
     </div>
 </div>
