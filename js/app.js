@@ -1,4 +1,20 @@
-var app = angular.module('RoutingApp', ['ngRoute','ui.bootstrap','smoothScroll']);
+var app2 =  {
+    initialize: function() {
+        this.bindEvents();
+    },
+    bindEvents: function() {
+        document.addEventListener('deviceready', this.onDeviceReady, true);
+    },
+
+    onDeviceReady: function() {
+        angular.element(document).ready(function() {
+            angular.bootstrap(document);
+        });
+    },
+};
+    
+    
+var app=    angular.module('RoutingApp', ['ngRoute','ui.bootstrap','smoothScroll']);
 
 app.config(function ($routeProvider) {
     $routeProvider
