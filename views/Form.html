@@ -1,0 +1,37 @@
+<div ng-controller="NavBarController">
+    <div my-customer info="customers"></div>
+</div>
+<header>
+    <div class="header-content-course" style="background-image: url({{detail.Img}});">
+        <div class="header-content-inner">
+            <h1>{{detail.Nome}}</h1>
+            <hr>
+            <div class="text-left col-lg-4">
+                <h2>Age:<small>{{ detail.AgeRange }}</small></h2>
+                <h2>Popularity:<small>{{ detail.Popularity }}</small></h2>
+                <h2>Level:<small>{{ detail.Livello }}</small></h2>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="surname">Surname</label>
+            <input type="text" class="form-control" id="surname" placeholder="Surname">
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-default">Enroll to the {{detail.Nome}} course!</button>
+    </form>
+</div>

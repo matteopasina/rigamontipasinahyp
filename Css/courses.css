@@ -30,21 +30,26 @@
     font-size: 18px;
 }
 
-.courseProperties p{
-    display: inline-block;
-    text-align: center;
-    font-size: 30px;
-    margin: 25px;
-    color: beige;
+#courseProperties {
+    background: rgba(255, 255, 255, 0.5);
+    background: -webkit-linear-gradient(left, white, transparent);
+    /* For Safari 5.1 to 6.0 */
+    
+    background: -o-linear-gradient(left, white, transparent);
+    /* For Opera 11.1 to 12.0 */
+    
+    background: -moz-linear-gradient(left, white, transparent);
+    /* For Firefox 3.6 to 15 */
+    
+    background: linear-gradient(to right, white, transparent);
+    /* Standard syntax */
 }
 
-.containInstr{
+.containInstr {
     margin-bottom: 1%;
 }
 
-.miniInstr:hover{
+.miniInstr:hover {
     transition: box-shadow 0.3s;
     box-shadow: 4px 4px 4px #363636;
 }
-
-.main 

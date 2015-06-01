@@ -1,12 +1,13 @@
 body {
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    
     padding-top: 80px;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @font-face {
     font-family: headerPages;
-    src: url(../fonts/new_facebok.ttf);
+    src: url(../fonts/FridayLovers.otf);
 }
 
 .news {
@@ -23,7 +24,7 @@ body {
 .mybtn {
     text-decoration: none;
     margin-top: 9%;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
@@ -78,10 +79,10 @@ div {
     min-height: 60px;
     background-color: #363636;
     font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size:20px;
+    font-size: 20px;
 }
 
-.myfooter .container-fluid{
+.myfooter .container-fluid {
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -96,7 +97,6 @@ div {
     text-decoration: none;
 }
 
-
 .instructorslist {
     text-align: center;
     font-family: sans-serif;
@@ -107,11 +107,13 @@ div {
     display: block;
     margin: 0 auto;
 }
-#map{
+
+#map {
     height: 500px;
 }
+
 .infoWindowContent {
-    font-size:  14px !important;
+    font-size: 14px !important;
     border-top: 1px solid #ccc;
     padding-top: 10px;
 }
@@ -141,8 +143,9 @@ header .header-content-instructor .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
+    color: #fed136;
     font-weight: 400;
-    font-size: 50pt;
+    font-size: 40pt;
     font-family: headerPages;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -167,31 +170,28 @@ header .header-content-course {
 }
 
 header .header-content-course .header-content-inner h1 {
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 100;
     font-family: headerPages;
-    font-size: 100pt;
+    color: #fed136;
+    font-size: 70pt;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-header .header-content-course .header-content-inner h2{
-    color:black;
+header .header-content-course .header-content-inner h2 {
+    color: black;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 300;
 }
 
-header .header-content-course .header-content-inner small{
+header .header-content-course .header-content-inner small {
     font-weight: 800;
-    color:#25F;
+    color: #25F;
 }
-
-
 
 header .header-content-course .header-content-inner hr {
-    margin: 30px auto;
+    margin: 30px auto 110px;
 }
-
-

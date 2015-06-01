@@ -1,3 +1,9 @@
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+var app = angular.module('RoutingApp', ['ngRoute', 'ui.bootstrap', 'smoothScroll']);
+=======
+>>>>>>> Stashed changes
 var app2 =  {
     initialize: function() {
         this.bindEvents();
@@ -15,6 +21,10 @@ var app2 =  {
     
     
 var app=    angular.module('RoutingApp', ['ngRoute','ui.bootstrap','smoothScroll']);
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 
 app.config(function ($routeProvider) {
     $routeProvider
@@ -44,9 +54,13 @@ app.config(function ($routeProvider) {
         .when('/Location', {
             templateUrl: '/views/Location.html'
         })
-     .when('/Categories/', {
-        controller: 'CategoriesController',
+        .when('/Categories/', {
+            controller: 'CategoriesController',
             templateUrl: '/views/Categories.html'
+        })
+        .when('/form/:id', {
+            controller: 'CourseController',
+            templateUrl: '/views/Form.html'
         })
         .otherwise({
             redirectTo: '/'
