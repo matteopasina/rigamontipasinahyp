@@ -28,6 +28,10 @@ app.config(function ($routeProvider) {
         .when('/Location', {
             templateUrl: '/views/Location.html'
         })
+     .when('/Categories', {
+        controller: 'CategoriesController',
+            templateUrl: '/views/Categories.html'
+        })
         .otherwise({
             redirectTo: '/'
         });
