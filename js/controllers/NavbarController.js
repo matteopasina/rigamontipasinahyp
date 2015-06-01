@@ -19,14 +19,6 @@ app.controller('NavBarController', ['$scope', function ($scope) {
   }
 ];
         $scope.location = [
-            {
-                name: 'ProvaLocation1',
-                address: '#/Location'
-  },
-            {
-                name: 'ProvaLocation2',
-                address: '#/Location'
-  }
  ];
         $scope.courseHome = [
             {
