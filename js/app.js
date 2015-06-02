@@ -1,30 +1,8 @@
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-var app = angular.module('RoutingApp', ['ngRoute', 'ui.bootstrap', 'smoothScroll']);
-=======
->>>>>>> Stashed changes
-var app2 =  {
-    initialize: function() {
-        this.bindEvents();
-    },
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, true);
-    },
 
-    onDeviceReady: function() {
-        angular.element(document).ready(function() {
-            angular.bootstrap(document);
-        });
-    },
-};
     
     
-var app=    angular.module('RoutingApp', ['ngRoute','ui.bootstrap','smoothScroll']);
-<<<<<<< Updated upstream
-=======
->>>>>>> origin/master
->>>>>>> Stashed changes
+var app=    angular.module('RoutingApp', ['ngRoute','ui.bootstrap','smoothScroll', 'App.services', 'App.controllers']);
+
 
 app.config(function ($routeProvider) {
     $routeProvider
