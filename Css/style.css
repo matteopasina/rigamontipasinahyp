@@ -5,6 +5,12 @@ body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+@media(max-width:768px) {
+    body {
+        padding-top: 50px;
+    }
+}
+
 @font-face {
     font-family: headerPages;
     src: url(../fonts/FridayLovers.otf);
@@ -112,6 +118,12 @@ div {
     height: 500px;
 }
 
+@media(max-width:768px) {
+    #map {
+        height: 300px;
+    }
+}
+
 .infoWindowContent {
     font-size: 14px !important;
     border-top: 1px solid #ccc;
@@ -150,6 +162,12 @@ header .header-content-instructor .header-content-inner h1 {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+@media(max-width:768px) {
+    header .header-content-course .header-content-inner h1 {
+        font-size: 25pt;
+    }
+}
+
 header .header-content-instructor .header-content-inner hr {
     margin: 30px auto;
 }
@@ -178,6 +196,12 @@ header .header-content-course .header-content-inner h1 {
     color: #fed136;
     font-size: 70pt;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@media(max-width:768px) {
+    header .header-content-course .header-content-inner h1 {
+        font-size: 40pt;
+    }
 }
 
 header .header-content-course .header-content-inner h2 {
