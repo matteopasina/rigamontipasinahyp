@@ -221,9 +221,19 @@ header .header-content-course .header-content-inner hr {
 }
 
 .carouselText h2 {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
     font-weight: 300;
     font-size: 40px;
     color: #fed136;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.imgcarousel {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .imgcarousel {
+        margin-left: -500px;
+    }
 }
