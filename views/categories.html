@@ -2,6 +2,15 @@
     <div my-customer info="courseHome"></div>
 </div>
 <div class="main">
+    <div class="sidebar">
+        <h4>Our course categories</h4>
+        <hr>
+        <div ng-repeat="x in categories">
+            <div class="sidebarElement">
+                <a href="#" scroll-to="{{x.Nome}}" duration="800" easing="easeInQuint" offset="120">{{x.Nome}}</a>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="instructorslist">
             <div ng-repeat="x in categories">
@@ -17,17 +26,7 @@
                                     <img class="img-responsive img-border img-left" src="{{ x.Icona }}" alt="">
                                 
                                  <p>{{x.Descrizione}}</p>
-                            </div>
-                            <!--
-
-                                -->
-                         <!--   <div class="col-lg-4 vcenter">
-                                <p><strong>Age:</strong>{{ x.AgeRange }}</p>
-                                <p><strong>Popularity:</strong>{{ x.Popularity }}</p>
-                                <p><strong>Level:</strong>{{ x.Livello }}</p>
-                            </div>
-                        </div>-->
-                       
+                            </div>                       
                     </div>
                 </div>
 

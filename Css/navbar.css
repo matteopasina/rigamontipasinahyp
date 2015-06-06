@@ -97,3 +97,10 @@
         font-size: 1.5em;
     }
 }
+
+/*nasconde bottone courses nella home quando collassa*/
+@media(max-width:768px){
+    .btn-group{
+        visibility: hidden;
+    }
+}
