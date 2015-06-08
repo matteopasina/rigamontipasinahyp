@@ -1,0 +1,239 @@
+body {
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    
+    padding-top: 80px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media(max-width:768px) {
+    body {
+        padding-top: 50px;
+    }
+}
+
+@font-face {
+    font-family: headerPages;
+    src: url(../fonts/FridayLovers.otf);
+}
+
+.news {
+    text-align: center;
+}
+
+.nav,
+.pagination,
+.carousel,
+.panel-title a {
+    cursor: pointer;
+}
+
+.mybtn {
+    text-decoration: none;
+    margin-top: 9%;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.mybtn:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.box hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+div {
+    border-radius: 4px;
+}
+
+#instructor {
+    height: 400px;
+    width: 350px;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.myfooter {
+    margin-top: 100px;
+    border-radius: 4px;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0px;
+    /* Set the fixed height of the footer here */
+    
+    min-height: 60px;
+    background-color: #363636;
+    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.myfooter .container-fluid {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.myfooter a {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+.myfooter a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.instructorslist {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+
+#map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    #map {
+        height: 300px;
+    }
+}
+
+.infoWindowContent {
+    font-size: 14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .header-content-instructor {
+    position: relative;
+    width: 100%;
+    padding: 15px 15px 0px 15px;
+    text-align: center;
+    background-image: url(../img/headerInstructor.jpg);
+}
+
+header .header-content-instructor .header-content-inner h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #fed136;
+    font-weight: 400;
+    font-size: 40pt;
+    font-family: headerPages;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@media(max-width:768px) {
+    header .header-content-course .header-content-inner h1 {
+        font-size: 25pt;
+    }
+}
+
+header .header-content-instructor .header-content-inner hr {
+    margin: 30px auto;
+}
+
+header .header-content-instructor .header-content-inner img {
+    margin-left: 10%;
+    -webkit-box-shadow: 0px -7px 10px #e6e6e6;
+    -moz-box-shadow: 0px -7px 10px #e6e6e6;
+    box-shadow: 0px -7px 10px #e6e6e6;
+}
+
+header .header-content-course {
+    position: relative;
+    width: 100%;
+    padding: 15px 15px 0px 15px;
+    text-align: center;
+    min-height: 372px;
+}
+
+header .header-content-course .header-content-inner h1 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: headerPages;
+    color: #fed136;
+    font-size: 70pt;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@media(max-width:768px) {
+    header .header-content-course .header-content-inner h1 {
+        font-size: 40pt;
+    }
+}
+
+header .header-content-course .header-content-inner h2 {
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+header .header-content-course .header-content-inner small {
+    font-weight: 800;
+    color: #25F;
+}
+
+header .header-content-course .header-content-inner hr {
+    margin: 30px auto 110px;
+}
+
+.carouselText h2 {
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    font-weight: 300;
+    font-size: 40px;
+    color: #fed136;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.imgcarousel {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .imgcarousel {
+        margin-left: -500px;
+    }
+}

@@ -1,0 +1,76 @@
+#coursesbox {
+    margin: 20px;
+}
+
+#coursesbox a{
+    text-decoration: none;
+    color:#111;
+}
+
+#coursesbox a:hover{
+    text-decoration: none;
+    color:#333;
+}
+
+#coursesbox p {
+    font-size: 20px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    margin-bottom: 20px;
+    transition: box-shadow 0.5s;
+    border-radius: 5px;
+}
+
+.img-border:hover {
+    box-shadow: 0px 4px 20px #4f394f;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.corso {
+    margin: 20px;
+    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+#courseProperties {
+    background: rgba(255, 255, 255, 0.5);
+    background: -webkit-linear-gradient(left, white, transparent);
+    /* For Safari 5.1 to 6.0 */
+    
+    background: -o-linear-gradient(left, white, transparent);
+    /* For Opera 11.1 to 12.0 */
+    
+    background: -moz-linear-gradient(left, white, transparent);
+    /* For Firefox 3.6 to 15 */
+    
+    background: linear-gradient(to right, white, transparent);
+    /* Standard syntax */
+}
+
+.containInstr {
+    margin-bottom: 1%;
+}
+
+.miniInstr:hover {
+    transition: box-shadow 0.3s;
+    box-shadow: 4px 4px 4px #363636;
+}
+
+.category h2 {
+    font-size: 40px;
+    color:#fed136;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.category hr {
+    border-color: #ccc;
+    border-width: 2px;
+}
