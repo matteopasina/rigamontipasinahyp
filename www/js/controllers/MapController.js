@@ -6,11 +6,16 @@ app.controller('MapCtrl',['$scope','$http',function ($scope,$http) {
     $http.get("http://grandepalestra.altervista.org/Location.php")
       .success(function(response) {
       $scope.info = response[0];
-        var lat=JSON.stringify($scope.info.lat);
-        var lng=JSON.stringify($scope.info.lng);
-           var c = JSON.stringify($scope.info.city);
+        var latStr=JSON.stringify($scope.info.lat).replace(",",".");
+        //var lat=parseFloat(JSON.stringify($scope.info.lat).replace(",","."));
+        var lngStr=JSON.stringify($scope.info.lng).replace(",",".");
+        var c = JSON.stringify($scope.info.city);
         var desc=JSON.stringify($scope.info.descr);
-        var city = 
+        var lat=latStr.replace('"','');
+    lat=lat.replace('"','');
+    var lng= lngStr.replace('"','');
+    lng=lng.replace('"','');
+var city = 
     {
         city : c,
         desc : desc,
@@ -18,6 +23,7 @@ app.controller('MapCtrl',['$scope','$http',function ($scope,$http) {
         long : lng
     }
     ;
+    
     var mapOptions = {
         zoom: 15,
         center: new google.maps.LatLng(lat, lng),
