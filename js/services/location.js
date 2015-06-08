@@ -1,5 +1,5 @@
-app.factory('categories', ['$http', function($http) {
-  return $http.get('http://grandepalestra.altervista.org/Categories.php')
+app.factory('location', ['$http', function($http) {
+  return $http.get('http://grandepalestra.altervista.org/Location.php')
          .success(function(data) {
            return data;
          })
