@@ -1,20 +1,28 @@
-var city = 
+
+
+
+app.controller('MapCtrl',['$scope','$http',function ($scope,$http) {
+
+    $http.get("http://grandepalestra.altervista.org/Location.php")
+      .success(function(response) {
+      $scope.info = response[0];
+        var lat=JSON.stringify($scope.info.lat);
+        var lng=JSON.stringify($scope.info.lng);
+           var c = JSON.stringify($scope.info.city);
+        var desc=JSON.stringify($scope.info.descr);
+        var city = 
     {
-        city : 'Springfield',
-        desc : 'This is the best city in the world because here is our Gym!',
-        lat : 42.1128405,
-        long : -72.5463414
+        city : c,
+        desc : desc,
+        lat : lat,
+        long : lng
     }
-;
-
-
-app.controller('MapCtrl', function ($scope) {
-
+    ;
     var mapOptions = {
         zoom: 15,
-        center: new google.maps.LatLng(42.1128405, -72.5463414),
+        center: new google.maps.LatLng(lat, lng),
         mapTypeId: google.maps.MapTypeId.TERRAIN
-    }
+    };
 
     $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
@@ -38,11 +46,15 @@ app.controller('MapCtrl', function ($scope) {
         
         $scope.markers.push(marker);
         
-    }  
+    };  
         createMarker(city);
     $scope.openInfoWindow = function(e, selectedMarker){
         e.preventDefault();
         google.maps.event.trigger(selectedMarker, 'click');
-    }
-
-});
+    };
+        
+      }); 
+    
+    
+    
+}]);
