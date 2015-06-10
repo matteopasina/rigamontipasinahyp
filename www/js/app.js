@@ -1,4 +1,6 @@
-var app=    angular.module('RoutingApp', ['ngRoute','ui.bootstrap','smoothScroll','ngAnimate']);
+var app = angular.module('RoutingApp', [  'ngRoute',
+                                          'ui.bootstrap',
+                                          'smoothScroll']);
 
 app.config(function ($routeProvider) {
     $routeProvider
