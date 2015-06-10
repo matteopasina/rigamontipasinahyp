@@ -3,7 +3,8 @@ var app = angular.module('RoutingApp', [  'ngRoute',
                                           'ui.bootstrap',
                                           'smoothScroll',
                                           'ngAnimate',
-                                       'uiGmapgoogle-maps']);
+                                       'uiGmapgoogle-maps',
+                                       'bnx.module.facebook']);
 
 
 app.config(function ($routeProvider,uiGmapGoogleMapApiProvider) {
