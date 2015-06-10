@@ -231,6 +231,10 @@ header .header-content-course .header-content-inner hr {
 .imgcarousel {
     height: 500px;
 }
+.angular-google-map-container { 
+  height: 300px; 
+}
+ 
 
 @media(max-width:768px) {
     .imgcarousel {

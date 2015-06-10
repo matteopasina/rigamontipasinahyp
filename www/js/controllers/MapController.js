@@ -1,7 +1,7 @@
 
 
 
-app.controller('MapCtrl',['$scope','$http',function ($scope,$http) {
+app.controller('MapCtrl',['$scope','$http','uiGmapGoogleMapApi' ,function ($scope,$http, uiGmapGoogleMapApi) {
 
     $http.get("http://grandepalestra.altervista.org/Location.php")
       .success(function(response) {
@@ -15,7 +15,37 @@ app.controller('MapCtrl',['$scope','$http',function ($scope,$http) {
     lat=lat.replace('"','');
     var lng= lngStr.replace('"','');
     lng=lng.replace('"','');
-var city = 
+    var zoom=12;
+          
+    uiGmapGoogleMapApi.then(function(maps) {
+          console.log('maps API loaded; creating map');
+          $scope.map = { center: { latitude: lat, longitude: lng }, zoom: zoom };
+         $scope.marker = {
+      id: 0,
+      coords: {
+        latitude: lat,
+        longitude: lng
+      },
+      options: { draggable: true },
+      events: {
+        dragend: function (marker, eventName, args) {
+          $log.log('marker dragend');
+          var lat = marker.getPosition().lat();
+          var lon = marker.getPosition().lng();
+          $log.log(lat);
+          $log.log(lon);
+
+          $scope.marker.options = {
+            draggable: true,
+            labelContent: "lat: " + $scope.marker.coords.latitude + ' ' + 'lon: ' + $scope.marker.coords.longitude,
+            labelAnchor: "100 0",
+            labelClass: "marker-labels"
+          };
+        }
+      }
+    };
+          });
+/*var city = 
     {
         city : c,
         desc : desc,
@@ -57,7 +87,7 @@ var city =
     $scope.openInfoWindow = function(e, selectedMarker){
         e.preventDefault();
         google.maps.event.trigger(selectedMarker, 'click');
-    };
+    };*/
         
       }); 
     

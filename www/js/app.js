@@ -1,9 +1,18 @@
+"use strict";
 var app = angular.module('RoutingApp', [  'ngRoute',
                                           'ui.bootstrap',
                                           'smoothScroll',
-                                          'ngAnimate']);
+                                          'ngAnimate',
+                                       'uiGmapgoogle-maps']);
 
-app.config(function ($routeProvider) {
+
+app.config(function ($routeProvider,uiGmapGoogleMapApiProvider) {
+     uiGmapGoogleMapApiProvider.configure({
+              key: 'AIzaSyDuJ3wFV2hYt4YCwQjNFW5FssdfZ5xcM9I',
+              v: '3.17',
+              libraries: 'weather,geometry,visualization'
+             });
+    
     $routeProvider
         .when('/', {
             templateUrl: 'views/Home.html'
