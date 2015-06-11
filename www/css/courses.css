@@ -60,8 +60,8 @@
 }
 
 .miniInstr:hover {
-    transition: box-shadow 0.3s;
-    box-shadow: 4px 4px 4px #363636;
+    transition: box-shadow 0.5s;
+    box-shadow: 0px 0px 15px #363636;
 }
 
 .category h2 {

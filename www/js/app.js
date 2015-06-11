@@ -32,7 +32,7 @@ app.config(function ($routeProvider,uiGmapGoogleMapApiProvider) {
         })
         .when('/coursesByCategory/', {
             controller: 'CourseByCourseCategoryController',
-            templateUrl: 'views/CourseLevel.html'
+            templateUrl: 'views/CourseCategory.html'
         })
         .when('/instructor/:id', {
             controller: 'InstructorController',
