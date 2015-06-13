@@ -11,6 +11,12 @@ body {
     }
 }
 
+@media(min-width:768px) and (max-width:1216px) {
+    body {
+        padding-top: 120px;
+    }
+}
+
 @font-face {
     font-family: headerPages;
     src: url(../fonts/FridayLovers.otf);
