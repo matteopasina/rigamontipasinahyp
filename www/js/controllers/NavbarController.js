@@ -22,7 +22,7 @@ app.controller('NavBarController', ['$scope', function ($scope) {
  ];
         $scope.courseHome = [
             {
-                name: 'Course By Level',
+                name: 'Courses By Level',
                 address: 'index.html#/courseByLevel'
   },
             {

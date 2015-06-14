@@ -1,6 +1,7 @@
-app.controller('CourseController', ['$scope', 'courses', '$routeParams', function($scope, courses, $routeParams) {
-  courses.success(function(data) {
-    $scope.detail = data[$routeParams.id];
+app.controller('formController', ['$scope','$http', '$routeParams', function($scope, $http, $routeParams) {
+  $http.get("http://grandepalestra.altervista.org/Form.php?id="+$routeParams.id)
+  .success(function(response) {
+      $scope.detail = response[0];
   });
 }]);
 

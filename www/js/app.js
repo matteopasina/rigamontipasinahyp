@@ -46,7 +46,7 @@ app.config(function ($routeProvider,uiGmapGoogleMapApiProvider) {
             templateUrl: 'views/categories.html'
         })
         .when('/form/:id', {
-            controller: 'CourseController',
+            controller: 'formController',
             templateUrl: 'views/Form.html'
         })
         .otherwise({

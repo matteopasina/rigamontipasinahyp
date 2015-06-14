@@ -14,8 +14,9 @@ header .header-content-course .header-content-inner h1 {
     font-size: 40pt;
 }
 
-.imgcarousel {
-    margin-left: -500px;
+.imgcarousel{
+    height: 300px;
+    margin-left: 0px;
 }
 
 .sidebar {
